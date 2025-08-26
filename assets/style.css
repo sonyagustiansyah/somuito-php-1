@@ -1,0 +1,152 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #333;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand img {
+  height: 90px;
+  max-height: 90px;
+  transition: height 0.3s ease;
+}
+
+.navbar.scrolled .navbar-brand img {
+  height: 60px;
+}
+
+/* Smooth underline animasi */
+.nav-link {
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #ffc107;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffc107;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Responsive navbar logo */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px;
+  }
+}
+
+/* Carousel Desktop */
+.carousel-item img {
+  width: 100%;
+  height: 50vh;
+  min-height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Carousel Mobile */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+  }
+}
+
+/* Scroll offset untuk section */
+section {
+  scroll-margin-top: 100px;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  background: #000 url('/assets/gambar/footer.webp') center/cover no-repeat;
+  color: #ffffff;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffc107;
+}
+
+/* underline animasi hover footer */
+footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+/* Heading style */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Card style */
+.card {
+  margin: 15px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
