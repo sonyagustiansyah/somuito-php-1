@@ -77,36 +77,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <form method="POST">
     <div class="mb-3">
+      <label class="form-label">No. OEM</label>
+      <input type="text" name="genuine_number" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
       <label class="form-label">Brand Mobil</label>
       <input type="text" name="brand_mobil" class="form-control" required>
     </div>
 
     <div class="mb-3">
-      <label class="form-label">Nama Mobil</label>
-      <input type="text" name="nama_mobil" class="form-control" required>
-    </div>
-
-    <div class="mb-3">
-      <label class="form-label">Deskripsi</label>
+      <label class="form-label">Nama Mobil/Model Mobil</label>
       <textarea name="description" class="form-control" rows="3" required></textarea>
-    </div>
-
-    <div class="mb-3">
-      <label class="form-label">Genuine Number</label>
-      <input type="text" name="genuine_number" class="form-control" required>
     </div>
 
     <div class="mb-3">
       <label class="form-label">Posisi</label>
       <select name="posisi" class="form-select" required>
         <option value="">-- Pilih Posisi --</option>
-        <option value="Front">Front</option>
-        <option value="Rear">Rear</option>
+        <option value="Front">FRONT</option>
+        <option value="Rear">REAR</option>
+        <option value="Front&Rear">FRONT&REAR</option>
       </select>
     </div>
 
     <button type="submit" class="btn btn-primary">Simpan</button>
-    <a href="brake_pads_premium.php" class="btn btn-danger">Kembali</a>
+    <a href="brake_pads.php" class="btn btn-warning">Lihat Detail</a>
   </form>
 </div>
 

@@ -2,7 +2,7 @@
 include '../config.php';
 
 // --- Pagination settings
-$limit = 5; // jumlah data per halaman
+$limit = 10; // jumlah data per halaman
 $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $offset = ($page - 1) * $limit;
 
@@ -78,7 +78,7 @@ $query = $conn->query($sql);
 
     <!-- Gambar Produk -->
     <div class="text-center mb-4">
-        <img src="../../assets/gambar/product1.webp" alt="Brake Pads Premium" class="img-fluid rounded shadow" width="1400">
+        <img src="../../assets/gambar/product1.webp" loading="lazy" alt="Brake Pads Premium" class="img-fluid rounded shadow" width="1400">
     </div>
 
     <!-- Deskripsi Produk -->
@@ -100,10 +100,9 @@ $query = $conn->query($sql);
         <thead class="table-dark">
         <tr>
             <th>No.</th>
+            <th>No. OEM</th>
             <th>Brand Mobil</th>
-            <th>Nama Mobil</th>
-            <th>Deskripsi</th>
-            <th>Genuine Number</th>
+            <th>Nama Mobil/Model Mobil</th>
             <th>Posisi</th>
         </tr>
         </thead>
@@ -113,11 +112,10 @@ $query = $conn->query($sql);
             while ($row = $query->fetch_assoc()) { ?>
             <tr>
                 <td><?= $no++ ?></td>
-                <td><?= $row['brand_mobil'] ?></td>
-                <td><?= $row['nama_mobil'] ?></td>
-                <td><?= $row['description'] ?></td>
-                <td><?= $row['genuine_number'] ?></td>
-                <td><?= $row['posisi'] ?></td>
+                <td><?= htmlspecialchars($row['genuine_number']) ?></td>
+                <td><?= htmlspecialchars($row['brand_mobil']) ?></td>
+                <td><?= htmlspecialchars($row['description']) ?></td>
+                <td><?= htmlspecialchars($row['posisi']) ?></td>
             </tr>
         <?php } } else { ?>
             <tr>

@@ -88,7 +88,7 @@ section {
 /* Footer */
 footer {
   position: relative;
-  background: #000 url('/assets/gambar/footer.webp') center/cover no-repeat;
+  background: #000 url('gambar/footer.webp') center/cover no-repeat;
   color: #ffffff;
   padding: 40px 20px;
   overflow: hidden;

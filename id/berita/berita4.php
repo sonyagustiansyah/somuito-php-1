@@ -84,7 +84,7 @@
       <p class="text-start">Wadah atau tangki berisi fluida rem yang terletak di atas master silinder rem. Fungsinya untuk menyimpan cadangan minyak rem dan memastikan tekanan selalu tersedia di dalam sistem hidrolik.</p>
 
       <p class="text-start">Itu dia penjelasan mengenai komponen Rem Cakram mobil sekaligus fungsinya. Dalam sistem Rem Cakram, komponen yang paling cepat aus adalah Brake Pad atau Kampas Rem. Hal ini karena Kampas Rem bekerja dengan menghasilkan gesekan langsung terhadap cakram (Disc Rotor) untuk memperlambat atau menghentikan kendaraan. Gesekan ini menyebabkan material pada Kampas Rem secara alami terkikis setiap kali rem digunakan.</p>
-      <p class="text-start">Pastikan Anda segera mengganti Kampas Rem mobil yang sudah mulai aus demi menjaga keamanan saat berkendara. Ganti dengan Kampas Rem mobil terbaik dari Somuito yang sudah terbukti kualitasnya. Pesan melalui cabang dan dealer resmi PT. Anugerah Idealestari yang tersebar di berbagai kota besar di Indonesia. Lihat daftar distributor Sparepart mobil terdekat dengan lokasi Anda. Atau klik banner di bawah ini untuk menghubungi CS kami. Atau klik banner di bawah ini untuk menghubungi CS kami.</p>
+      <p class="text-start">Pastikan Anda segera mengganti Kampas Rem mobil yang sudah mulai aus demi menjaga keamanan saat berkendara. Ganti dengan Kampas Rem mobil terbaik dari Somuito yang sudah terbukti kualitasnya. Pesan melalui cabang dan dealer resmi PT. Anugerah Idealestari yang tersebar di berbagai kota besar di Indonesia. Lihat daftar distributor Sparepart mobil terdekat dengan lokasi Anda. Atau klik banner di bawah ini untuk menghubungi CS kami.</p>
 
       <a href="../index.php" class="btn btn-primary mt-3">
         Kembali

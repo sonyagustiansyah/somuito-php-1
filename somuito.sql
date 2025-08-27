@@ -1,23 +1,222 @@
-CREATE DATABASE somuito;
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 27, 2025 at 12:19 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
-USE somuito;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
--- Tabel untuk Brake Pads Premium
-CREATE TABLE brake_pads_premium (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    brand_mobil VARCHAR(100),
-    nama_mobil VARCHAR(100),
-    description TEXT,
-    genuine_number VARCHAR(100),
-    posisi ENUM('Front', 'Rear')
-);
 
--- Tabel untuk Brake Shoes Premium
-CREATE TABLE brake_shoes_premium (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    brand_mobil VARCHAR(100),
-    nama_mobil VARCHAR(100),
-    description TEXT,
-    genuine_number VARCHAR(100),
-    posisi ENUM('Front', 'Rear')
-);
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `somuito`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `brake_pads_premium`
+--
+
+CREATE TABLE `brake_pads_premium` (
+  `id` int(11) NOT NULL,
+  `brand_mobil` varchar(100) DEFAULT NULL,
+  `nama_mobil` varchar(100) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `genuine_number` varchar(100) DEFAULT NULL,
+  `posisi` enum('FRONT','REAR','FRONT&REAR') DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `brake_pads_premium`
+--
+
+INSERT INTO `brake_pads_premium` (`id`, `brand_mobil`, `nama_mobil`, `description`, `genuine_number`, `posisi`) VALUES
+(1, 'Daihatsu', 'DAIHATSU AGYA & AYLA MATIC', 'AGYA AT (12-) / DAIHATSU AYLA AT (12-)', '04491-BZ020', 'FRONT'),
+(2, 'Daihatsu', 'DAIHATSU SIGRA & CALYA', 'CALYA (16-) / DAIHATSU SIGRA (16-)', '04491-BZ030', 'FRONT'),
+(3, 'Daihatsu', 'DAIHATSU GRANMAX', 'GRAN MAX (08-21) / LUXIO (09-) / NEW GRAN MAX (22-)', '04465-BZ130', 'FRONT'),
+(4, 'Daihatsu', 'DAIHATSU XENIA / AVANZA / TERIOS / RUSH / APV', 'AVANZA (04-10) / NEW AVANZA (11-21) / DAIHATSU XENIA (04-10) / NEW XENIA (11-21) / RUSH (06-16) / DAIHATSU TERIOS (06-16) / APV (04-) / MEGA CARRY (11-18)', '04465-YZZR8', 'FRONT'),
+(5, 'Daihatsu', 'DAIHATSU GRANMAX', 'GRAN MAX (08-21) / LUXIO (09-)', '04495-BZ100', 'REAR'),
+(6, 'Daihatsu', 'DAIHATSU TERIOS / RUSH / TARUNA / TAFT GT / FEROZA', 'RUSH (06-16) / DAIHATSU TERIOS (06-16)', '04495-87601', 'REAR'),
+(7, 'Daihatsu', 'DAIHATSU XENIA / AVANZA', 'AVANZA (04-10) / NEW AVANZA (11-21) / DAIHATSU XENIA (04-10) / NEW XENIA (11-21)', '04495-BZ010', 'REAR'),
+(8, 'Toyota', 'TOYOTA FORTUNER 2004 - 2010 / HILUX VIGO 3.0', 'FORTUNER (05-11) / HILUX VIGO SC (05-15)', '04465-0K020', 'FRONT'),
+(9, 'Toyota', 'TOYOTA FORTUNER VNT \'11-\'15', 'FORTUNER VNT (12-15) / HILUX VIGO DC (05-15)', '04465-0K340', 'FRONT'),
+(10, 'Toyota', 'TOYOTA KIJANG INNOVA', 'KIJANG INNOVA (04-15)', '04465-0K100', 'FRONT'),
+(11, 'Toyota', 'TOYOTA KIJANG SUPER 5K', 'KIJANG SUPER KF40/50 5K/7K (86-97) / KIJANG KAPSUL KF60/70/80 7K (98-03)', '04465-0B020', 'FRONT'),
+(12, 'Toyota', 'TOYOTA NEW INNOVA REBORN', 'INNOVA REBORN (16-)', '04465-0K430', 'FRONT'),
+(13, 'Toyota', 'TOYOYA ALL NEW VELOZ', 'VELOZ (22-)', '04466-B1011', 'REAR'),
+(14, 'Toyota', 'TOYOTA ALL NEW AVANZA / RAIZE / ALL NEW VELOZ / ROCKY', 'ALL NEW AVANZA (22-) / VELOZ (22-) / ALL NEW DAIHATSU XENIA (22-) / RAIZE (21-) / DAIHATSU ROCKY (21-)', '04465-BZ300', 'FRONT'),
+(15, 'Toyota', 'TOYOTA FORTUNER VRZ / HILUX REVO DOUBLE CABIN', 'NEW FORTUNER (16-) / NEW HILUX REVO DC (16-)', '04465-0K370', 'FRONT'),
+(16, 'Toyota', 'TOYOTA VIOS / YARIS TIPE G,E,J / LIMO NEW GEN 2 FR', 'ALL NEW YARIS (14-21) / ALL NEW VIOS (14-21)', '04465-0D150', 'FRONT'),
+(17, 'Toyota', 'TOYOTA VIOS / YARIS GEN 2 FR', 'NEW YARIS (06-13) / NEW VIOS (07-13)', '04465-52240', 'FRONT'),
+(18, 'Toyota', 'TOYOTA VIOS / YARIS GEN 2 RR', 'NEW YARIS (06-13) / NEW VIOS (07-13)', '04465-52120', 'REAR'),
+(19, 'Toyota', 'TOYOTA VIOS / LIMO GEN 1 FR', 'VIOS (03-06)', '04466-52160', 'FRONT'),
+(20, 'Toyota', 'TOYOTA VIOS / LIMO GEN 1 FR', 'VIOS (03-06)', '04466-52040', 'REAR'),
+(21, 'Toyota', 'TOYOTA SIENTA / NAV-1', 'NAV1 (12-16) / VOXY (17-) / SIENTA (16-)', '04465-02310', 'FRONT'),
+(22, 'Toyota', 'TOYOTA SIENTA', 'SIENTA (16-)', '04466-0D040', 'REAR'),
+(23, 'Toyota', 'TOYOTA VOXY', 'VOXY (17-)', '04466-28120', 'REAR'),
+(24, 'Toyota', 'TOYOTA HIACE PREMIO', 'HIACE PREMIO (19-)', '04465-26440', 'FRONT'),
+(25, 'Toyota', 'TOYOTA HIACE COMMUTER', 'HIACE COMMUTER (12-)', '04465-YZZE9', 'FRONT'),
+(26, 'Toyota', 'TOYOTA HIACE PREMIO', 'HIACE PREMIO (19-)', '04466-26030', 'REAR'),
+(27, 'Toyota', 'TOYOTA ALL NEW RUSH', 'NEW RUSH (17-) / NEW DAIHATSU TERIOS (17-)', '04465-BZ250', 'FRONT'),
+(28, 'Mitshubisi', 'MITSUBISHI L300 DIESEL', 'COLT L300 (81-)', '4605A905B1', 'FRONT'),
+(29, 'Mitshubisi', 'MITSUBISHI MIRAGE / DAIHATSU AYLA & AGYA M/T', 'AGYA MT (12-) / DAIHATSU AYLA MT (12-)', '04491-BZ021', 'FRONT'),
+(30, 'Mitshubisi', 'MITSUBISHI ALL PAJERO SPORT / DAKAR GEN 1 / STRADA / TRITON', 'L200 STRADA TRITON 2.5/2.8 (08-15)', '4605A284', 'FRONT'),
+(31, 'Mitshubisi', 'MITSUBISHI PAJERO DAKAR NEW / TRITON ATHLETE', 'NEW TRITON HDX (16-) / NEW PAJERO SPORT (16-)', '4605A930', 'FRONT'),
+(32, 'Mitshubisi', 'MITSUBISHI ALL PAJERO DAKAR REAR', 'PAJERO SPORT (08-15) / NEW PAJERO SPORT (16-)', '4605A783', 'REAR'),
+(33, 'Mitshubisi', 'MITSUBISHI XPANDER', 'XPANDER (17-) / XPANDER CROSS (19-) / NEW NISSAN LIVINA (19-)', '4605B949', 'FRONT'),
+(34, 'Suzuki', 'BP SUZUKI ERTIGA GEN 1 / ALL NEW SWIFT', 'ERTIGA (12-18) / MAZDA 2 (09-14)', '55810-B58M50N', 'FRONT'),
+(35, 'Suzuki', 'BP SUZUKI ALL NEW ERTIGA', 'NEW ERTIGA (19-) / XL7 (20-)', '55810-59R00', 'FRONT'),
+(36, 'Suzuki', 'BP SUZUKI ALL NEW MEGA CARRY', 'NEW CARRY (19-)', '55810-52S00', 'FRONT'),
+(37, 'Suzuki', 'BP SUZUKI FUTURA 1.3 1.6 / CARRY ST130 / T120SS', 'CARRY FUTURA (91-18) / MITSUBISHI COLT T120SS (91-18)', '55110-77500', 'FRONT'),
+(38, 'Isuzu', 'BP ISUZU PHANTER', 'PANTHER KAROSERI 2.3/2.5 (91-00) / PANTHER KAPSUL TOURING 2.5 (01-21)', '8-87083-999-0', 'FRONT'),
+(39, 'Isuzu', 'BP ISUZU TRAGA', 'TRAGA (18-)', '8-98283-244-0', 'FRONT'),
+(40, 'Nissan', 'BP NISSAN GRAND LIVINA', 'GRAND LIVINA (07-12)', 'D1060-ED500', 'FRONT'),
+(41, 'Nissan', 'BP NISSAN NEW GRAND LIVINA', 'NEW GRAND LIVINA (13-18)', 'D1060-EE5ZA', 'FRONT'),
+(42, 'Nissan', 'BP XTRAIL T30,T31 2003-2013 / TEANA J31, J32 / NEW SERENA C26', 'X-TRAIL T30 (03-08) / X-TRAIL T31 (09-13) / X-TRAIL T32 (14-21) / SERENA C26 (13-18) / SERENA C27 (19-23)', 'D1060-8H385', 'REAR'),
+(43, 'Nissan', 'BP NISSAN X-TRAIL', 'X-TRAIL T30 (03-08) / SERENA C24 (04-12)', 'D1060-OW7X5', 'FRONT'),
+(44, 'Nissan', 'BP NISSAN NEW X-TRAIL', 'X-TRAIL T31 (09-13)', 'D1060-JE21A', 'FRONT'),
+(45, 'Nissan', 'BP NISSAN ALL NEW X-TRAIL', 'X-TRAIL T32 (14-21)', 'D1060-4GA0A', 'FRONT'),
+(46, 'Nissan', 'BP NISSAN SERENA C26', 'SERENA C26 (13-18)', 'D1M60-CY70B', 'FRONT'),
+(47, 'Nissan', 'BP NISSAN SERENA C27', 'SERENA C27 (19-23)', 'D1MFM-4KJ1J', 'FRONT'),
+(48, 'Nissan', 'BP DATSUN GO', 'DATSUN GO (14-20) / CROSS (18-20)', 'D1060-4LA0A', 'FRONT'),
+(49, 'Honda', 'BP HONDA BRIO / JAZZ GD3 / CITY GD8 / GENIO / ESTILO', 'CITY GD3 (02-07) / JAZZ GD8 (02-07) / BRIO (12-17) / NEW BRIO (18-)', '45022-TG1-T00', 'FRONT'),
+(50, 'Honda', 'BP HONDA HRV', 'HR-V (14-21) / NEW HR-V (22-)', '45022-TGM-H01', 'FRONT'),
+(51, 'Honda', 'BP HONDA BRV', 'BR-V (16-21) / NEW BR-V (22-)', '45022-S7A-010', 'FRONT'),
+(52, 'Honda', 'BP HONDA MOBILIO / JAZZ GE8-GK5 / CITY GM2-GM6 / FREED', 'CITY GM2 (08-14) / JAZZ GE8 (08-14) / CITY GM6 (15-20) / JAZZ GK5 (15-20) / FREED (08-16) / MOBILIO (14-24)', '45022-TG0-T00', 'FRONT'),
+(53, 'Honda', 'BP HONDA JAZZ GD, GE / CITY GD,GM / FERIO, GENIO, ESTILO', 'CITY GD3 (02-07) / JAZZ GD8 (02-07) / CITY GM2 (08-14) / JAZZ GE8 (08-14)', '43022-SR3-G01', 'REAR'),
+(54, 'Honda', 'BP HONDA HRV', 'HR-V (14-21) / NEW HR-V (22-)', '43022-T7J-H01', 'REAR'),
+(55, 'Honda', 'BP HONDA CRV RE, RM, RW', 'CR-V GEN 3 (07-12) / CR-V GEN 4 (13-16) / CR-V GEN 5 (17-23)', '45022-T0A-A01', 'FRONT'),
+(56, 'Honda', 'BP HONDA NEW CRV / ALL NEW CRV', 'CR-V GEN 3 (07-12) / CR-V GEN 4 (13-16)', '43022-S9A-JT0', 'REAR'),
+(57, 'Honda', 'BP HONDA ALL NEW CRV', 'CR-V GEN 5 (17-23)', '43022-TLA-A00', 'REAR'),
+(58, 'Wuling', 'BP WULING CONFERO / CORTEZ ( FR )', 'CONFERO (17-) / CORTEZ (18-)', '23948042', 'FRONT'),
+(59, 'Wuling', 'BP WULING CONFERO / CORTEZ ( RR )', 'CONFERO (17-) / CORTEZ (18-)', '23904739', 'REAR');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `brake_shoes_premium`
+--
+
+CREATE TABLE `brake_shoes_premium` (
+  `id` int(11) NOT NULL,
+  `brand_mobil` varchar(100) DEFAULT NULL,
+  `nama_mobil` varchar(100) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `genuine_number` varchar(100) DEFAULT NULL,
+  `posisi` enum('FRONT','REAR','FRONT&REAR') DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `brake_shoes_premium`
+--
+
+INSERT INTO `brake_shoes_premium` (`id`, `brand_mobil`, `nama_mobil`, `description`, `genuine_number`, `posisi`) VALUES
+(1, 'Toyota', 'TOYOTA ALL NEW RUSH', 'NEW RUSH (17-) / NEW DAIHATSU TERIOS (17-)', '04465-BZ160', 'REAR'),
+(2, 'Toyota', 'TOYOTA HIACE COMMUTER', 'HIACE COMMUTER (12-)', '04495-35250', 'REAR'),
+(3, 'Toyota', 'TOYOTA ALL NEW AVANZA', 'ALL NEW AVANZA (22-) / ALL NEW DAIHATSU XENIA (22-) / RAIZE (21-) / DAIHATSU ROCKY (21-)', '04495-BZ180', 'REAR'),
+(4, 'Toyota', 'TOYOTA AGYA / AYLA', 'AGYA (12-) / DAIHATSU AYLA (12-)', '04495-BZ110', 'REAR'),
+(5, 'Toyota', 'TOYOTA CALYA / SIGRA', 'CALYA (16-) / DAIHATSU SIGRA (16-)', '04495-BZ140', 'REAR'),
+(6, 'Toyota', 'TOYOTA FORTUNER 04\'-\'16 / HILUX ALL', 'FORTUNER (05-11) / FORTUNER VNT (12-15) / NEW FORTUNER (16-) / HILUX VIGO DC (05-15) / NEW HILUX REVO DC (16-)', '04495-0K120', 'REAR'),
+(7, 'Toyota', 'TOYOTA KIJANG INNOVA', 'KIJANG INNOVA (04-15) / HILUX VIGO SC (05-15)', '04495-0K040', 'REAR'),
+(8, 'Toyota', 'TOYOTA INNOVA REBORN', 'INNOVA REBORN (16-) / NEW HILUX REVO SC (16-)', '04495-0K130', 'REAR'),
+(9, 'Toyota', 'TOYOTA KIJANG SUPER 5K KF40 KF50 / CORONA MARK 2', 'KIJANG SUPER KF40/50 5K/7K (86-97) / KIJANG KAPSUL KF60/70/80 7K (98-03)', '04495-0B020', 'REAR'),
+(10, 'Toyota', 'TOYOTA VIOS GEN 2-3 / LIMO / YARIS GEN 2-3', 'ALL NEW YARIS (14-21) / ALL NEW VIOS (14-21)', '04495-0D060', 'REAR'),
+(11, 'Toyota', 'TOYOTA NAV1', 'NAV1 (12-16)', '04495-28151', 'REAR'),
+(12, 'Mitshubisi', 'MITSUBISHI L300 DIESEL \'84-\'96 / L038 / L039 / KUDA', 'COLT L300 (81-)', 'ML587659', 'REAR'),
+(13, 'Mitshubisi', 'MITSUBISHI TRITON', 'L200 STRADA TRITON 2.5/2.8 (08-15) / NEW TRITON HDX (16-)', '4600A106', 'REAR'),
+(14, 'Mitshubisi', 'MITSUBISHI XPANDER', 'XPANDER (17-) / XPANDER CROSS (19-) / NEW NISSAN LIVINA (19-) / JUKE (10-18)', '4600A259', 'REAR'),
+(15, 'Suzuki', 'BS SUZUKI APV', 'APV (04-) / MEGA CARRY (11-18) / NEW CARRY (19-)', '53200-61J00', 'REAR'),
+(16, 'Suzuki', 'BS SUZUKI ERTIGA GEN 1', 'ERTIGA (12-18)', '53200-M5K10', 'REAR'),
+(17, 'Suzuki', 'BS SUZUKI NEW ERTIGA', 'NEW ERTIGA (19-) / XL7 (20-)', '53200-73R00', 'REAR'),
+(18, 'Suzuki', 'BS SUZUKI ST100 / EXTRA \'84-\'96', 'CARRY ST100 (83-09)', '53200-77311', 'FRONT&REAR'),
+(19, 'Suzuki', 'BS SUZUKI FUTURA 1.3 1.6 / CARRY ST130 / T120SS', 'CARRY FUTURA (91-18) / MITSUBISHI COLT T120SS (91-18)', '53200-B77501', 'REAR'),
+(20, 'Isuzu', 'BS ISUZU PANTHER TBR52 / TBR54 / TBR541', 'PANTHER KAROSERI 2.3/2.5 (91-00) / PANTHER KAPSUL TOURING 2.5 (01-21)', '8-94479-709-1', 'REAR'),
+(21, 'Isuzu', 'BS ISUZU TRAGA', 'TRAGA (18-)', '16-87832-225-0', 'REAR'),
+(22, 'Nissan', 'BS DATSUN GO', 'DATSUN GO (14-20) / CROSS (18-20)', 'D4060-4LC0A', 'REAR'),
+(23, 'Nissan', 'BS NISSAN SERENA C24', 'SERENA C24 (04-12)', '44060-4N028', 'REAR'),
+(24, 'Nissan', 'BS NISSAN GRAND LIVINA , JUKE / XPANDER', 'GRAND LIVINA (07-12) / NEW GRAND LIVINA (13-18)', '44060-EN026', 'REAR'),
+(25, 'Honda', 'BS HONDA FREED / BRV', 'BR-V (16-21) / NEW BR-V (22-) / FREED (08-16)', '43153-S10-A01', 'REAR'),
+(26, 'Honda', 'BS HONDA JAZZ GK5 / MOBILIO', 'CITY GM6 (15-20) / JAZZ GK5 (15-20) / MOBILIO (14-24)', '43153-SNA-A02', 'REAR'),
+(27, 'Honda', 'BS HONDA BRIO', 'BRIO (12-17)', '43153-TG1-T01', 'REAR'),
+(28, 'Honda', 'BS HONDA NEW BRIO', 'NEW BRIO (18-)', '43153-TG4-T51', 'REAR');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kontak`
+--
+
+CREATE TABLE `kontak` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(100) DEFAULT NULL,
+  `telepon` varchar(20) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `pesan` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `kontak`
+--
+
+INSERT INTO `kontak` (`id`, `nama`, `telepon`, `email`, `pesan`, `created_at`) VALUES
+(3, 'Sons', '08123456789', 'sons@gmail.com', 'sons@gmail.com', '2025-08-27 08:10:06');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `brake_pads_premium`
+--
+ALTER TABLE `brake_pads_premium`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `brake_shoes_premium`
+--
+ALTER TABLE `brake_shoes_premium`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `kontak`
+--
+ALTER TABLE `kontak`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `brake_pads_premium`
+--
+ALTER TABLE `brake_pads_premium`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+
+--
+-- AUTO_INCREMENT for table `brake_shoes_premium`
+--
+ALTER TABLE `brake_shoes_premium`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT for table `kontak`
+--
+ALTER TABLE `kontak`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
