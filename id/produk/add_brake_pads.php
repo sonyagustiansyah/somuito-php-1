@@ -97,7 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <option value="">-- Pilih Posisi --</option>
         <option value="Front">FRONT</option>
         <option value="Rear">REAR</option>
-        <option value="Front&Rear">FRONT&REAR</option>
+        <option value="Front&Rear">FRONT & REAR</option>
       </select>
     </div>
 

@@ -155,7 +155,7 @@
       <h1 class="text-center mb-4">Dapatkan Produk</h1>
       <div class="row text-center">
         <h5>Tersebar Di 9 Kota Besar</h5>
-        <p>Somuito memiliki 9 dealer resmi yang tersebar di 9 kota besar, yaitu: Jakarta, Jawa Barat, Jawa Tengah, Sulawesi, Kalimantan Tengah dan Kalimantan Selatan.</p>
+        <p>Somuito memiliki 9 dealer resmi yang tersebar di 9 kota besar, yaitu: Jakarta, Jawa Barat, Jawa Tengah, Kalimantan Selatan, Sulawesi, Kalimantan Barat, Bangka Belitung, Sumatera Selatan dan Bandar Lampung.</p>
         <div class="col">
           <img src="../assets/gambar/area.webp" class="img-fluid mb-2" alt="Peta Jaringan Dealer Resmi PT. Somuito di Indonesia" loading="lazy" />
         </div>
@@ -173,16 +173,16 @@
       <div class="row row-cols-2 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="../assets/gambar/berita1.webp" class="card-img-top" alt="Artikel: Cara Kerja Rem Cakram Mobil dan Cara Merawatnya" loading="lazy">
+            <img src="../assets/gambar/berita1.webp" class="card-img-top" alt="tanda kampas rem mobil habis" loading="lazy">
             <div class="card-body">
               <span class="badge text-bg-warning">Berita</span>
-              <h5 class="card-title">Cara Kerja Rem Cakram Mobil dan Cara Merawatnya</h5>
-              <p class="card-text">Sistem rem menjadi komponen pada Sparepart mobil yang memiliki fungsi dan peranan penting dalam keselamatan ...</p>
+              <h5 class="card-title">5 Tanda Kampas Rem Mobil Habis yang Wajib Anda Ketahui</h5>
+              <p class="card-text">Sistem pengereman adalah salah satu bagian terpenting dalam mobil. Salah satu komponen penting di dalam sistem pengereman adalah ...</p>
               <a href="berita/berita1.php" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <div class="card h-100">
             <img src="../assets/gambar/berita2.webp" class="card-img-top" alt="Artikel: Komponen Rem Tromol Mobil dan Fungsinya" loading="lazy">
             <div class="card-body">
@@ -236,7 +236,7 @@
               <a href="berita/acara1.php" class="btn btn-primary">Selengkapnya</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

@@ -99,7 +99,7 @@
         <br><br>
 
       <h2>Tersebar Di 9 Kota Besar</h2>
-      <p>Somuito memiliki 9 dealer resmi yang tersebar di 9 kota besar, yaitu: Jakarta, Jawa Barat, Jawa Tengah, Sulawesi, Kalimantan Tengah dan Kalimantan Selatan.</p>
+      <p>Somuito memiliki 9 dealer resmi yang tersebar di 9 kota besar, yaitu: Jakarta, Jawa Barat, Jawa Tengah, Kalimantan Selatan, Sulawesi, Kalimantan Barat, Bangka Belitung, Sumatera Selatan dan Bandar Lampung.</p>
       <img src="../../assets/gambar/area.webp" alt="Peta dealer resmi Somuito di 6 kota besar Indonesia" loading="lazy" class="img-fluid" style="max-width: 700px; height: auto;">
       
       <h2 class="text-start">Dealer Somuito</h2>
