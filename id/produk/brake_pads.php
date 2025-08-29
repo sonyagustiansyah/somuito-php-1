@@ -10,8 +10,7 @@ $offset = ($page - 1) * $limit;
 $search = isset($_GET['search']) ? $conn->real_escape_string($_GET['search']) : '';
 $where = "";
 if (!empty($search)) {
-    $where = "WHERE brand_mobil LIKE '%$search%' 
-              OR nama_mobil LIKE '%$search%'
+    $where = "WHERE brand_mobil LIKE '%$search%'
               OR description LIKE '%$search%' 
               OR genuine_number LIKE '%$search%'";
 }
@@ -31,6 +30,8 @@ $query = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <title>Brake Pads Premium - PT. Somuito</title>
+  <meta name="description" content="Brake Pads Premium Somuito - kampas rem mobil berkualitas tinggi, OEM replacement untuk Toyota, Daihatsu, Mitsubishi, Suzuki, dan lainnya.">
+  <meta name="keywords" content="kampas rem, brake pad, somuito, OEM brake pad, kampas rem toyota, kampas rem daihatsu, kampas rem suzuki">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@ $query = $conn->query($sql);
 <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">
+      <a class="navbar-brand" href="../index.php">
         <img src="../../assets/gambar/logo.webp" alt="PT. Somuito - Produsen Kampas Rem Berkualitas" loading="lazy" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

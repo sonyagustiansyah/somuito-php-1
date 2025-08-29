@@ -1,0 +1,27 @@
+# Aktifkan mod_rewrite
+RewriteEngine On
+RewriteBase /
+
+# Biarkan kalau file/folder memang ada
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Root domain langsung ke id/index.php
+DirectoryIndex id/index.php
+
+# ====== Mapping subfolder ======
+# Produk
+RewriteRule ^produk/(.*)$ id/produk/$1 [L]
+
+# Beli
+RewriteRule ^beli/(.*)$ id/beli/$1 [L]
+
+# Berita
+RewriteRule ^berita/(.*)$ id/berita/$1 [L]
+
+# Hubungi
+RewriteRule ^hubungi/(.*)$ id/hubungi/$1 [L]
+
+# ====== Mapping halaman utama ke index.php ======
+RewriteRule ^(beranda|tentang|produk|berita)/?$ id/index.php [L]

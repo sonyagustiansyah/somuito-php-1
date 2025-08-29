@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berita Terbaru - PT. Somuito</title>
-  <meta name="description" content="Berita terbaru dari PT. Somuito seputar produk kampas rem, teknologi pengereman, promosi, event, dan kegiatan perusahaan.">
+  <meta name="title" content="5 Tanda Kampas Rem Mobil Habis yang Wajib Anda Ketahui">
+  <meta name="description" content="Jangan diabaikan! Berikut 5 tanda kampas rem mobil habis. Cari tahu apa saja tandanya di artikel ini">
+  <meta name="keywords" content="kampas rem mobil, tanda kampas rem habis, sistem pengereman, PT Somuito, brake pad premium">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../assets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,8 +15,8 @@
   <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-        <a class="navbar-brand" href="/id/index.html">
-            <img src="../../assets/gambar/logo.webp" alt="Logo PT. Somuito, produsen kampas rem mobil berkualitas" loading="lazy" />
+        <a class="navbar-brand" href="../index.php">
+            <img src="../../assets/gambar/logo.webp" alt="Logo PT. Somuito - Produsen Kampas Rem Berkualitas" loading="lazy" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -86,7 +88,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 mb-3">
-          <img src="../../assets/gambar/logo.webp" alt="Logo resmi PT. Somuito" loading="lazy" style="height: 90px;" />
+          <img src="../../assets/gambar/logo.webp" alt="Logo PT. Somuito - Produsen Kampas Rem Berkualitas" loading="lazy" style="height: 90px;" />
         </div>
         <div class="col-md-4 mb-3">
           <h5 style="font-size: 24px;">Navigasi</h5>

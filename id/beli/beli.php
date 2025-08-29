@@ -16,7 +16,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-        <a class="navbar-brand" href="/id/index.html">
+        <a class="navbar-brand" href="/id/index.php">
             <img src="../../assets/gambar/logo.webp" alt="Logo PT. Somuito" loading="lazy" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,7 +100,7 @@
 
       <h2>Tersebar Di 9 Kota Besar</h2>
       <p>Somuito memiliki 9 dealer resmi yang tersebar di 9 kota besar, yaitu: Jakarta, Jawa Barat, Jawa Tengah, Kalimantan Selatan, Sulawesi, Kalimantan Barat, Bangka Belitung, Sumatera Selatan dan Bandar Lampung.</p>
-      <img src="../../assets/gambar/area.webp" alt="Peta dealer resmi Somuito di 6 kota besar Indonesia" loading="lazy" class="img-fluid" style="max-width: 700px; height: auto;">
+      <img src="../../assets/gambar/area.webp" alt="Peta dealer resmi Somuito di 9 kota besar Indonesia" loading="lazy" class="img-fluid" style="max-width: 700px; height: auto;">
       
       <h2 class="text-start">Dealer Somuito</h2>
       <p class="text-start">Lihat daftar Dealer di bawah ini:</p>
